@@ -6,7 +6,7 @@ def get_member_posts(group, ct_id, page=0):
     if group == "nogizaka":
         url = f"https://www.nogizaka46.com/s/n46/diary/MEMBER/list?ct={ct_id}&page={page}"
         res = requests.get(url)
-        res.encoding = res.apparent_encoding
+        res.encoding = "utf-8"
         soup = BeautifulSoup(res.text, "html.parser")
 
         posts = []
@@ -27,7 +27,7 @@ def get_member_posts(group, ct_id, page=0):
     elif group == "hinatazaka":
         url = f"https://www.hinatazaka46.com/s/official/diary/member/list?ct={ct_id}&page={page}"
         res = requests.get(url)
-        res.encoding = res.apparent_encoding
+        res.encoding = "utf-8"
         soup = BeautifulSoup(res.text, "html.parser")
 
         posts = []
@@ -42,7 +42,7 @@ def get_member_posts(group, ct_id, page=0):
     elif group == "sakurazaka":
         url = f"https://sakurazaka46.com/s/s46/diary/blog/list?ct={ct_id}&page={page}"
         res = requests.get(url)
-        res.encoding = res.apparent_encoding
+        res.encoding = "utf-8"
         soup = BeautifulSoup(res.text, "html.parser")
 
         posts = []
@@ -60,7 +60,7 @@ def get_member_posts(group, ct_id, page=0):
     elif group == "keyakizaka":
         url = f"https://www.keyakizaka46.com/s/k46o/diary/member/list?ima=0000&page={page}&ct={ct_id}"
         res = requests.get(url)
-        res.encoding = res.apparent_encoding
+        res.encoding = "utf-8"
         soup = BeautifulSoup(res.text, "html.parser")
         posts = []
         urls = set()
@@ -78,3 +78,4 @@ def get_member_posts(group, ct_id, page=0):
         return posts
 
     return []
+
