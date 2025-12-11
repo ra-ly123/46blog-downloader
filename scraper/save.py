@@ -8,7 +8,7 @@ from .utils import sanitize_filename, shorten_title
 
 def save_post(group, post, save_dir="blogs"):
     res = requests.get(post["url"])
-    res.encoding = res.apparent_encoding
+    res.encoding = "utf-8"
     soup = BeautifulSoup(res.text, "html.parser")
 
     group_settings = {
@@ -172,3 +172,4 @@ def save_post(group, post, save_dir="blogs"):
 
     print(f"保存完了: {title}")
     return True
+
