@@ -1,7 +1,7 @@
 from scraper.posts import get_member_posts
 from scraper.save import save_post
 from data.members import members_data
-from pathlib import Path   # ← 追加
+from pathlib import Path
 
 def main():
     groups = {
@@ -79,3 +79,4 @@ if __name__ == "__main__":
         print(f"予期せぬエラーが発生: {e}")
     finally:
         input("\nEnterキーで終了...")
+
