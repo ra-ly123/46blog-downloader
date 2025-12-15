@@ -29,6 +29,10 @@
 
 ### 1. とりあえずツール本体をクローン
 
+https://github.com/ra-ly123/46blog-downloader/archive/refs/heads/main.zip  
+ここからzipをダウンロードしても使えますが、まぁどちらにせよ環境準備にコマンド使うのでコマンドルートで説明します  
+とは言ってもPythonとbeautifulsoup4しか使ってないので、この2つが入ってる人はzipをダウンロードして直で[使い方](#-使い方)に飛べます  
+
 以下を実行
 
 ```
@@ -224,5 +228,6 @@ save_dir = Path("C:/Users/ユーザー/Downloads/46") / group_key / member_name
 ## 📄 ライセンス
 
 MIT License
+
 
 ---
