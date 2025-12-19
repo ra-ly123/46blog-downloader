@@ -32,6 +32,7 @@
 https://github.com/ra-ly123/46blog-downloader/archive/refs/heads/main.zip  
 ここからzipをダウンロードしても使えますが、結局ライブラリインストールに使うのでコマンドで説明します  
 とは言ってもPythonとrequests、beautifulsoup4しか使ってないので、この3つが入ってる人はzipをダウンロードして[使い方](#-使い方)に飛んじゃってください  
+gitが入ってない場合もzipダウンロードで大丈夫です  
 
 以下を実行
 
@@ -231,6 +232,7 @@ MIT License
 
 
 ---
+
 
 
 
