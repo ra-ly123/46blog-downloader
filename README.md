@@ -213,7 +213,7 @@ blog/
 ちなみにmain.py の次の行：
 
 ```python
-save_dir = f"blog/{group_key}/{clean_member_name}"
+save_dir = f"blog/{group_key}/{clean_member_name}
 ```
 
 この `"blog"` を好きなフォルダパスに書き換えれば保存先を変えられます。(テキストエディタに投げると編集できます)  
@@ -222,8 +222,8 @@ save_dir = f"blog/{group_key}/{clean_member_name}"
 
 例 :
 ```python
-save_dir = Path("C:\\Users\\ユーザー\\Downloads\\46") / group_key / member_name
-save_dir = Path("C:/Users/ユーザー/Downloads/46") / group_key / member_name
+save_dir = Path("C:\\Users\\ユーザー\\Downloads\\46")/{group_key}/{clean_member_name}
+save_dir = Path("C:/Users/ユーザー/Downloads/46")/{group_key}/{clean_member_name}
 ```
 
 ---
@@ -245,6 +245,7 @@ MIT License
 
 
 ---
+
 
 
 
