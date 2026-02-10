@@ -202,8 +202,7 @@ blog/
   <img src="images/html2.png" width="45%" />
 </p>
 グループごとにタイトルの色が変わります。  
-
-
+     
 ※アップデートによりグループごとにテンプレートを変える仕様に変更しました ↓
 
 <img src="templates/temp.png">
@@ -245,6 +244,7 @@ MIT License
 
 
 ---
+
 
 
 
